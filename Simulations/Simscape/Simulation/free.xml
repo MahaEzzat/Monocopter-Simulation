@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/23/17||03:23:07" using="SimMechanics Link Version 4.4" from="SolidWorks 24.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="free" uid="free" version="116">
+<AssemblyFile name="free.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="mp-1" uid="mp-1" grounded="true" entityUid="mp*:*Default">
+<Transform>
+<Rotation>-1 -1.0474444016529387e-014 -1.0474444016529327e-014 1.0474444016529438e-014 -1.0474444016529387e-014 -1 1.0474444016529277e-014 -1 1.0474444016529498e-014</Rotation>
+<Translation>0.089362965839366634 0.065977331244810422 0.087871132311160408</Translation>
+</Transform>
+</Instance>
+<Instance name="plade 2-1" uid="plade 2-1" entityUid="plade 2*:*Default">
+<Transform>
+<Rotation>1.1665734662081312e-014 1 9.1289971905313976e-015 0.12109174804634101 -1.0474444016529474e-014 0.99264131918587883 0.99264131918587883 -1.0474444016529242e-014 -0.12109174804634101</Rotation>
+<Translation>0.10818261401960794 0.065542695301714388 0.17935774334587667</Translation>
+</Transform>
+</Instance>
+<Instance name="motorsym-1" uid="motorsym-1" entityUid="motorsym" rigid="true">
+<Transform>
+<Rotation>-0.92552841069893299 -1.0498359455698311e-014 0.37867817601375875 -0.37867817601375875 -1.0354337190761803e-014 -0.92552841069893299 1.3637491463207664e-014 -1 5.6077336341859723e-015</Rotation>
+<Translation>0.091846320660585651 0.087872334739206109 0.087871132311217834</Translation>
+</Transform>
+<Instance name="motor-1" uid="motor-1" entityUid="motor*:*Default">
+<Transform>
+<Rotation>-0.20440941202330676 0 0.97888548476125958 0 1 0 -0.97888548476125958 0 -0.20440941202330676</Rotation>
+<Translation>0.056174936456332522 0.009999999999999995 -0.015530447445737776</Translation>
+</Transform>
+</Instance>
+<Instance name="propeller-1" uid="propeller-1" entityUid="propeller*:*Default">
+<Transform>
+<Rotation>0.98738860697930031 0 0.15831531450708405 0 1 0 -0.15831531450708405 0 0.98738860697930031</Rotation>
+<Translation>0.054428311209544583 0.001985345149470033 -0.017262045277179006</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>motorsym-1</Uid>
+<Uid>motor-1</Uid>
+</InstancePath>
+<Position>0.0020519939917483521 -0.010000000000000009 -0.0013592697121886585</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>mp-1</Uid>
+</InstancePath>
+<Position>0.05442492017986679 0.009999999999999995 -0.017261267056427984</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>motorsym-1</Uid>
+<Uid>motor-1</Uid>
+</InstancePath>
+<Position>0.0020519939917483659 0 -0.0013592697121886654</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>mp-1</Uid>
+</InstancePath>
+<Position>0 0.009999999999999995 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>mp-1</Uid>
+</InstancePath>
+<Position>-0.053431000000000048 0 0.0070717499999999947</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>plade 2-1</Uid>
+</InstancePath>
+<Position>-0.091617090008477522 0.034611351819757358 0.0044900000000000009</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>mp-1</Uid>
+</InstancePath>
+<Position>-0.053431000000000048 0 0.0070717499999999947</Position>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>plade 2-1</Uid>
+</InstancePath>
+<Position>-0.091617090008477522 0.034611351819757358 0.0044900000000000009</Position>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="motorsym" uid="motorsym" version="125">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="motorsym.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="motor" uid="motor*:*Default" version="125">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="motor.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00017694748850472953</Mass>
+<CenterOfMass>0.002051993991748356 -0.0047893656064936898 -0.0013592697121886639</CenterOfMass>
+<Inertia>1.9517207297950578e-009 5.7245810188220039e-010 1.9517207297950578e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="motor_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="mp" uid="mp*:*Default" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="mp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0052156751439972867</Mass>
+<CenterOfMass>0.0037413214023163544 0.0050000000000000001 0.0058430454618152638</CenterOfMass>
+<Inertia>2.590816045240423e-007 5.6413937265669448e-006 5.4692400411095239e-006 0 7.6909884099099043e-007 0</Inertia>
+</MassProperties>
+<GeometryFile name="mp_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="plade 2" uid="plade 2*:*Default" version="131">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="plade 2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.028998566720955434</Mass>
+<CenterOfMass>0.018147901672731771 0.017838333422310476 0.0022449606018023886</CenterOfMass>
+<Inertia>3.3379245522627013e-006 8.468677822131925e-005 8.7927265896429969e-005 1.1089986207229307e-011 -3.9692061677421231e-011 3.2280971228682867e-006</Inertia>
+</MassProperties>
+<GeometryFile name="plade 2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="propeller" uid="propeller*:*Default" version="812">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="propeller.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00028035000385289788</Mass>
+<CenterOfMass>-3.5618762727335103e-006 0.0091432771374980563 2.3405239872030671e-007</CenterOfMass>
+<Inertia>3.4797264228317029e-010 3.1021389938665592e-008 3.0817215431535768e-008 -1.0875228177046572e-015 5.3388213421995588e-010 1.959040719915048e-014</Inertia>
+</MassProperties>
+<GeometryFile name="propeller_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Diffuse r="0.8666666666666667" g="0.90980392156862744" b="1" a="1"/>
+<Specular r="0.43333333333333335" g="0.45490196078431372" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.60000002384185791</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

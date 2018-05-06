@@ -1,0 +1,30 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7600M Series (ID=0x6840)
+    Vendor:   ATI
+    VRAM:     1004 MB
+    Driver:   15.201.1151.1008
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Control Project\Our drone\Drone_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading F:\Control Project\Our drone\Drone_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Control Project\Our drone\Drone_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.404415 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 14c8 -> priority: 1 
